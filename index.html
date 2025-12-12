@@ -1,51 +1,181 @@
-<h3>4- الأمر mkdir</h3>
-            <p>إنشاء مجلد جديد.</p>
-            <pre>mkdir project</pre>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Linux_mkdir_command.png" alt="mkdir command">
-            <iframe src="https://www.youtube.com/embed/3xV2r0Q8zjU"></iframe>
-        </div>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>شرح أوامر لينكس الأساسية</title>
 
-        <!-- rm -->
-        <div class="command-card">
-            <h3>5- الأمر rm</h3>
-            <p>حذف الملفات أو المجلدات.</p>
-            <pre>rm file.txt</pre>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Linux_rm_command.png" alt="rm command">
-            <iframe src="https://www.youtube.com/embed/I0z0KXJz3Yc"></iframe>
-        </div>
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        <!-- cp -->
-        <div class="command-card">
-            <h3>6- الأمر cp</h3>
-            <p>نسخ الملفات.</p>
-            <pre>cp file1.txt file2.txt</pre>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Linux_cp_command.png" alt="cp command">
-            <iframe src="https://www.youtube.com/embed/1t2eM8jE1ZQ"></iframe>
-        </div>
+<style>
+body{
+    font-family: Tahoma, Arial;
+    background:#f4f6f8;
+    margin:0;
+}
+header{
+    background:#1f2937;
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+header i{
+    color:#22c55e;
+}
+.container{
+    width:90%;
+    margin:auto;
+    padding:20px;
+}
+.box{
+    background:white;
+    padding:20px;
+    margin-bottom:25px;
+    border-right:6px solid #2563eb;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    border-radius:10px;
+}
+h2{
+    color:#2563eb;
+    border-bottom:2px solid #2563eb;
+    padding-bottom:8px;
+}
+.command{
+    margin-top:30px;
+}
+.command h3 i{
+    color:#2563eb;
+}
+pre{
+    background:#111827;
+    color:#22c55e;
+    padding:15px;
+    border-radius:6px;
+}
+img{
+    width:100%;
+    max-width:500px;
+    margin-top:10px;
+    border-radius:8px;
+    border:1px solid #ddd;
+}
+iframe{
+    width:100%;
+    height:315px;
+    margin-top:10px;
+    border-radius:8px;
+}
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
 
-        <!-- mv -->
-        <div class="command-card">
-            <h3>7- الأمر mv</h3>
-            <p>نقل أو إعادة تسمية الملفات.</p>
-            <pre>mv old.txt new.txt</pre>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Linux_mv_command.png" alt="mv command">
-            <iframe src="https://www.youtube.com/embed/FZz8z_f7Jw8"></iframe>
-        </div>
+<body>
 
-        <!-- chmod -->
-        <div class="command-card">
-            <h3>8- الأمر chmod</h3>
-            <p>تغيير صلاحيات الملفات.</p>
-            <pre>chmod 755 file.sh</pre>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Linux_chmod_command.png" alt="chmod command">
-            <iframe src="https://www.youtube.com/embed/Q8y2g4b5zGg"></iframe>
-        </div>
+<header>
+<h1><i class="fa-brands fa-linux"></i> شرح أوامر لينكس الأساسية</h1>
+<p>مشروع جامعي – تقنية شبكات الحاسب الآلي</p>
+</header>
 
-    </div>
+<div class="container">
+
+<!-- معلومات المشروع -->
+<div class="box">
+<h2><i class="fa-solid fa-id-card"></i> معلومات المشروع</h2>
+<p><strong>اسم المتدرب:</strong> رائد ظافر الشهري</p>
+<p><strong>الرقم الأكاديمي:</strong> 445155717</p>
+<p><strong>التخصص:</strong> تقنية شبكات الحاسب الآلي</p>
+<p><strong>اسم المشروع:</strong> شرح أوامر لينكس الأساسية</p>
+<p><strong>اسم المقرر:</strong> ريادة الأعمال التخصصية – الحاسب وتقنية المعلومات</p>
+</div>
+
+<!-- شرح -->
+<div class="box">
+<h2><i class="fa-solid fa-book"></i> شرح أوامر لينكس</h2>
+<p>
+أوامر لينكس هي أوامر تُستخدم في الطرفية (Terminal) للتحكم في نظام التشغيل،
+وتساعد في إدارة الملفات والمجلدات وتنفيذ الأوامر المختلفة بكفاءة.
+</p>
+</div>
+
+<!-- الأوامر -->
+<div class="box">
+<h2><i class="fa-solid fa-terminal"></i> الأوامر الأساسية</h2>
+
+<div class="command">
+<h3><i class="fa-solid fa-folder-open"></i> 1- الأمر ls</h3>
+<p>عرض محتويات المجلد الحالي.</p>
+<pre>ls -l</pre>
+<img src="https://linuxhint.com/wp-content/uploads/2021/05/ls-command.png">
+<iframe src="https://www.youtube.com/embed/ZtqBQ68cfJc"></iframe>
+</div>
+
+<div class="command">
+<h3><i class="fa-solid fa-arrow-right-arrow-left"></i> 2- الأمر cd</h3>
+<p>التنقل بين المجلدات.</p>
+<pre>cd Documents</pre>
+<img src="https://linuxhint.com/wp-content/uploads/2021/05/cd-command.png">
+<iframe src="https://www.youtube.com/embed/YHFzr-akOas"></iframe>
+</div>
+
+<div class="command">
+<h3><i class="fa-solid fa-location-dot"></i> 3- الأمر pwd</h3>
+<p>معرفة المسار الحالي.</p>
+<pre>pwd</pre>
+<img src="https://linuxhint.com/wp-content/uploads/2021/05/pwd-command.png">
+<iframe src="https://www.youtube.com/embed/5FZp5c7JpGg"></iframe>
+</div>
+
+<div class="command">
+<h3><i class="fa-solid fa-folder-plus"></i> 4- الأمر mkdir</h3>
+<p>إنشاء مجلد جديد.</p>
+<pre>mkdir project</pre>
+<img src="https://linuxhint.com/wp-content/uploads/2021/05/mkdir-command.png">
+<iframe src="https://www.youtube.com/embed/3xV2r0Q8zjU"></iframe>
+</div>
+
+<div class="command">
+<h3><i class="fa-solid fa-trash"></i> 5- الأمر rm</h3>
+<p>حذف الملفات أو المجلدات.</p>
+<pre>rm file.txt</pre>
+<img src="https://linuxhint.com/wp-content/uploads/2021/05/rm-command.png">
+<iframe src="https://www.youtube.com/embed/I0z0KXJz3Yc"></iframe>
+</div>
+
+<div class="command">
+<h3><i class="fa-solid fa-copy"></i> 6- الأمر cp</h3>
+<p>نسخ الملفات.</p>
+<pre>cp a.txt b.txt</pre>
+<img src="https://linuxhint.com/wp-content/uploads/2021/05/cp-command.png">
+<iframe src="https://www.youtube.com/embed/1t2eM8jE1ZQ"></iframe>
+</div>
+
+<div class="command">
+<h3><i class="fa-solid fa-file-pen"></i> 7- الأمر mv</h3>
+<p>نقل أو إعادة تسمية الملفات.</p>
+<pre>mv old.txt new.txt</pre>
+<img src="https://linuxhint.
+com/wp-content/uploads/2021/05/mv-command.png">
+<iframe src="https://www.youtube.com/embed/FZz8z_f7Jw8"></iframe>
+</div>
+
+<div class="command">
+<h3><i class="fa-solid fa-lock"></i> 8- الأمر chmod</h3>
+<p>تغيير صلاحيات الملفات.</p>
+<pre>chmod 755 file.sh</pre>
+<img src="https://linuxhint.com/wp-content/uploads/2021/05/chmod-command.png">
+<iframe src="https://www.youtube.com/embed/Q8y2g4b5zGg"></iframe>
+</div>
+
+</div>
 </div>
 
 <footer>
-    <p>© مشروع شرح أوامر لينكس الأساسية</p>
+<p>© مشروع شرح أوامر لينكس الأساسية</p>
 </footer>
 
 </body>
